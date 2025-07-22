@@ -1,3 +1,4 @@
+// Contact.jsx
 import React, { useState } from "react";
 import { Form, InputGroup } from "react-bootstrap";
 import style from "./Contact.module.css";
@@ -8,34 +9,17 @@ export default function Contact() {
   const [userAge, setUserAge] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // ✅ فحص الحقول
-    if (!userName || !userAge || !userEmail || !userPassword) {
-      alert("Please fill in all fields.");
-      return;
-    }
-
     console.log({ userName, userAge, userEmail, userPassword });
-
-    // ✅ تأكيد الإرسال
-    setSubmitted(true);
-
-    // ✅ مسح الحقول
-    setUserName("");
-    setUserAge("");
-    setUserEmail("");
-    setUserPassword("");
   };
 
   const inputGroupStyle = {
     position: "relative",
     paddingTop: "24px",
     width: "100%",
-    maxWidth: "100%",
+    maxWidth: "100%", // ضروري للموبايل
   };
 
   const labelBaseStyle = {
@@ -101,8 +85,8 @@ export default function Contact() {
 
   return (
     <div
-      className={`container-fluid d-flex flex-column justify-content-start align-items-center text-center ${style.fullHeight}`}
-      style={{ paddingTop: "150px" }}
+      className={`container-fluid d-flex flex-column justify-content-start align-items-center text-center ${style.HW}`}
+      style={{ paddingTop: "150px", minHeight: "100vh" }}
     >
       <h2 className="h1 pt-4" style={{ color: "#2C3E50" }}>
         CONTACT SECTION
@@ -137,17 +121,15 @@ export default function Contact() {
               "password"
             )}
 
-            <div className="text-center mt-4 d-flex mb-5 ">
-              <button type="submit" className={`btn ${style.submitBtn}`}>
+            <div className="text-center mt-4 d-flex  mb-5">
+              <button
+                type="submit"
+                className="btn text-white px-4 py-2 rounded-3"
+                style={{ backgroundColor: "#1abc9c" }}
+              >
                 Send Message
               </button>
             </div>
-
-            {submitted && (
-              <div className="text-success text-center mt-3">
-                Message sent successfully!
-              </div>
-            )}
           </Form>
         </div>
       </div>

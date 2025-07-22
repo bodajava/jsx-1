@@ -35,9 +35,9 @@
 }
 
 .submitBtn {
-  background-color: #1abc9c !important;
-  color: white !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 1p15px !important;
-  border: none !important;
+  background-color: #1abc9c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
 }

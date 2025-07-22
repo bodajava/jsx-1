@@ -137,7 +137,7 @@ export default function Contact() {
               "password"
             )}
 
-            <div className="text-center mt-4 d-flex mb-5 ">
+            <div className="text-center mt-4 d-flex mb-5 justify-content-center">
               <button type="submit" className={`btn ${style.submitBtn}`}>
                 Send Message
               </button>

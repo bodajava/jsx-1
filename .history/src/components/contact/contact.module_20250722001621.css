@@ -9,6 +9,7 @@
   border-bottom: 3px solid #2c3e50;
 }
 
+/* Contact.module.css */
 .floatingLabel {
   font-style: normal;
   font-weight: 400;
@@ -28,16 +29,4 @@
   padding: 0 4px;
   z-index: 10;
   font-size: 20px;
-}
-
-.fullHeight {
-  min-height: 100vh;
-}
-
-.submitBtn {
-  background-color: #1abc9c !important;
-  color: white !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 1p15px !important;
-  border: none !important;
 }
