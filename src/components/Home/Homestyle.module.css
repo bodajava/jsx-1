@@ -1,0 +1,65 @@
+.color-ligth,
+i {
+  color: white;
+}
+
+.line-pefor {
+  border-bottom: 3px solid #ffffff;
+}
+
+.line-pefor {
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}
+
+.HW {
+  height: 100vh;
+  width: 1905px;
+  background-color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+  .color-ligth {
+    font-size: 2rem;
+  }
+
+  .line-pefor {
+    width: 50px;
+  }
+
+  .HW {
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HW {
+    padding: 40px 10px;
+    min-height: auto;
+  }
+}
+
+.color-ligth {
+  color: white;
+}
+
+.line-pefor {
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .line-pefor {
+    width: 50px;
+  }
+
+  .color-ligth {
+    font-size: 50px !important;
+    font-weight: 800 !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
