@@ -7,7 +7,7 @@ import avatar3 from "../../assets/port3.png";
 export default function Portfolio() {
   const [makimg, setmakimg] = useState(null);
 
-  function makimgFunction(img) {
+  function useImgFunction(img) {
     setmakimg(img);
     document
       .querySelector(`.${style.ligthBoxContainer}`)
@@ -45,7 +45,7 @@ export default function Portfolio() {
         <div className="row g-5 ">
           <div className="col-md-4 pt-3 ">
             <div
-              onClick={() => makimgFunction(avatar1)}
+              onClick={() => useImgFunction(avatar1)}
               className={`${style.hoverimg}`}
             >
               <img
@@ -58,7 +58,7 @@ export default function Portfolio() {
           </div>
           <div className="col-md-4 pt-3 ">
             <div
-              onClick={() => makimgFunction(avatar2)}
+              onClick={() => useImgFunction(avatar2)}
               className={`${style.hoverimg}`}
             >
               <img
@@ -71,7 +71,7 @@ export default function Portfolio() {
           </div>
           <div className="col-md-4 pt-3 ">
             <div
-              onClick={() => makimgFunction(avatar3)}
+              onClick={() => useImgFunction(avatar3)}
               className={`${style.hoverimg}`}
             >
               <img
@@ -84,7 +84,7 @@ export default function Portfolio() {
           </div>
           <div className="col-md-4">
             <div
-              onClick={() => makimgFunction(avatar1)}
+              onClick={() => useImgFunction(avatar1)}
               className={`${style.hoverimg}`}
             >
               <img
@@ -97,7 +97,7 @@ export default function Portfolio() {
           </div>
           <div className="col-md-4 ">
             <div
-              onClick={() => makimgFunction(avatar2)}
+              onClick={() => useImgFunction(avatar2)}
               className={`${style.hoverimg}`}
             >
               <img
@@ -110,7 +110,7 @@ export default function Portfolio() {
           </div>
           <div className="col-md-4  pb-4">
             <div
-              onClick={() => makimgFunction(avatar3)}
+              onClick={() => useImgFunction(avatar3)}
               className={`${style.hoverimg}`}
             >
               <img
@@ -132,9 +132,9 @@ export default function Portfolio() {
           className={`${style.ligthBox}`}
           onClick={(e) => e.stopPropagation()}
         >
-          {makimg && (
+          {useimg && (
             <img
-              src={makimg}
+              src={useimg}
               alt="Selected Portfolio"
               className="w-100 rounded-3"
             />
