@@ -1,0 +1,80 @@
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.socialIconsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* ✅ تخلي الأيقونات تلف لو الشاشة ضيقة */
+  overflow-x: hidden;
+}
+
+.p {
+  background-color: #1a252f;
+  color: aliceblue;
+  text-align: center;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.p p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .item h3 {
+    font-size: 1.2rem;
+  }
+
+  .item p {
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .p {
+    height: 60px;
+  }
+
+  .p p {
+    font-size: 0.8rem;
+  }
+}

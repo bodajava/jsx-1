@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, Link } from "react-router-dom";
-import style from "./Navstyle.module.css";
+import style from "./navstyle.module.css";
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
