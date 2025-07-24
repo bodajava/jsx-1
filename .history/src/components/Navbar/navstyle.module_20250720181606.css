@@ -1,0 +1,14 @@
+.custom-navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition: padding 0.6s ease;
+}
+
+.scrolled {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.customBg {
+  background-color: #1abc9c !important;
+}
